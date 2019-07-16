@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="Public/Styling/myStyle.css">
+        <script src="https://code.angularjs.org/1.6.9/angular.js"></script>
+    </head>
+    <body ng-app="myApp" ng-controller="myController">
+       <div ng-include="headDiv"></div>
+        <script>
+            angular.module("myApp",[])
+                    .controller("myController",($scope)=>{
+                        $scope.headDiv = "Public/inlineSheet/masterHead.html";
+                    });
+        </script>
+    </body>
+</html>
