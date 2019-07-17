@@ -1,15 +1,30 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" type="text/css" href="Public/Styling/myStyle.css">
-        <script src="https://code.angularjs.org/1.6.9/angular.js"></script>
+		<style>
+			html, body {
+				height: 100%;
+				margin: 0;
+				background-color:#2c303593;
+			}
+		</style>
+        <link rel="stylesheet" type="text/css" href="Public/Styling/headerStyling.css">
+		<link rel="stylesheet" type="text/css" href="Public/Styling/aboutUsStyling.css">
+		<link rel="stylesheet" type="text/css" href="Public/Styling/signUpStyling.css">
+        <script src="https://code.angularjs.org/1.6.9/angular.js"></script>  
     </head>
+	
     <body ng-app="myApp" ng-controller="myController">
-       <div ng-include="headDiv"></div>
+       <div style="width:100%;height:auto"ng-include="headDiv"></div>
+	   <div style="width:100%;height:auto"ng-include="aboutUsDiv"></div>
+	   <div style="width:100%;height:auto"ng-include="signupDiv"></div>
+       
         <script>
             angular.module("myApp",[])
                     .controller("myController",($scope)=>{
                         $scope.headDiv = "Public/inlineSheet/masterHead.html";
+						$scope.signupDiv = "Public/inlineSheet/signUpDiv.html";
+						$scope.aboutUsDiv = "Public/inlineSheet/signUpDiv.html";
                     });
         </script>
     </body>
