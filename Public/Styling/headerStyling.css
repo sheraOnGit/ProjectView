@@ -1,6 +1,7 @@
 .Master-flex-container {
     display: flex;
     justify-content: space-between;
+    align-items: ;
     background-color: #3e4042;
     height: 70px;
 	margin:0px;
@@ -21,7 +22,7 @@
     width:70px;
     height:80px;
     color:#eb0000;
-    font-size: 95% ;
+    font-size: 90% ;
     font-weight: bold;
 }
 .headerButton:hover{
