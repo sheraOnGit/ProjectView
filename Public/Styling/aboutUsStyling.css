@@ -1,0 +1,12 @@
+.aboutUsDiv{
+	background-repeat:no-repeat;
+	display:inline-block;
+	width:100%;
+	height: auto;
+	padding:10px;
+	text-align:center;
+}
+.aboutUsFont{
+	font-family: Lucida Console, Courier, monospace;
+	color:white;
+}

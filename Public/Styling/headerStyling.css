@@ -1,0 +1,33 @@
+.Master-flex-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: #3e4042;
+    height: 70px;
+	margin:0px;
+}
+.Master-flex-container > div {
+    width: auto;
+    height: auto;
+    margin: 0 10px 0 10px; 
+	position:relative
+}
+.headerTitle{
+    color:  #ccff00e3;
+}
+.headerButton{
+    background-color: #ccff00f1;
+    border: none;
+    text-align: center;
+    width:70px;
+    height:80px;
+    color:#eb0000;
+    font-size: 95% ;
+    font-weight: bold;
+}
+.headerButton:hover{
+    background-color: #cbfa0f;
+    cursor: pointer;
+}
+.headerButton:visited{
+    background-color: #65fa0f;
+}
